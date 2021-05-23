@@ -20,7 +20,7 @@ while True:
     k = dbus_proc.stdout.readline()
     # we get bytes from pipe, so decode it and split( https://pythonz.net/references/named/str.split/ )
     words = k.decode('UTF-8').split()
-    # connection code comes from word 'uint32' sooo lets find index of its element in array
+    # connection code comes from word 'uint32' so lets find index of its element in array
     try:
         element_index = words.index('uint32')
     except ValueError:
