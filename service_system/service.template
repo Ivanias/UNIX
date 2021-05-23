@@ -1,0 +1,6 @@
+[Unit]
+Description = Babakin_systemctl_service
+[Service]
+ExecStart=PATH
+[Install]
+WantedBy=multi-user.target
